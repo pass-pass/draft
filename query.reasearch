@@ -1,0 +1,13 @@
+<(name, (price euro))(product(1))>
+
+<(
+  name,
+  (price euro)
+)><(
+  all(
+    products where(
+         (date is("2018") || between(2010 2020))
+      && (name is("iphone"))
+    )
+  )
+)>
