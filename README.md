@@ -94,3 +94,38 @@ const xxx = ( product(n) ) <(
   )
 )> ( product(n) )
 ```
+
+# new thinking
+
+## first
+state catchAll = (All: State) => {
+  - (Pattern: All)(Link: State)
+}
+
+## second
+
+state catchAll = (All: State) => {
+  - (State)
+    (State) => {
+      - (pattern)(link)
+    }
+}
+
+## logger
+
+state catchAll = (All: State) => {
+  - All: (log) => {
+    - Product: (name)
+    - Login: (user username)
+  })
+}
+
+## draft
+(state){
+  - Waiting({ progress >= (10)}) : 
+  - Loading(State) : 
+  - error : 
+  - Never : 
+  - All : catchAll
+  - Some : 
+}
