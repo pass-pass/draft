@@ -4,7 +4,7 @@ const { db, list, get, create, remove, update } = require('../utils')(DB_ROOT);
 const assert = require('assert');
 
 const entity = 'plops';
-const resetEntity = () =>get([entity]).map(plop => remove(entity, plop.id));
+const resetEntity = () => get([entity]).map(plop => remove(entity, plop.id));
 
 describe('crudl', () => {
   beforeEach(resetEntity);
