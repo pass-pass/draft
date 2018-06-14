@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "npx mocha"
+  },
   "dependencies": {
     "mkdirp": "^0.5.1"
   },
